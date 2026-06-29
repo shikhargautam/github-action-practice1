@@ -1,0 +1,21 @@
+#workflow
+#should have name
+name: Hello
+on:
+  workflow_dispatch: 
+#jobs
+#should be inside workflow
+jobs:
+  say-hello:
+  #creates an ephermal container with ubuntu running
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Say hello to everyone
+        run: echo "Hello Dosto"
+
+#steps
+#should be inside jobs
+
+#actions 
+#should be inside steps
